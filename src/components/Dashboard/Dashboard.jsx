@@ -27,8 +27,8 @@ const Dashboard = () => {
       <p>
         This is the dashboard page where you can see a list of all the users.
       </p>
-      {listOfUsers.map((userObj)=> (
-        <h3>{userObj.username}</h3>
+      {listOfUsers.map((userObj,index)=> (
+        <h3 key={index}>{userObj.username}</h3>
       ))}
     </main>
   );
